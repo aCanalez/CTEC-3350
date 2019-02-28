@@ -1,0 +1,701 @@
+/*
+Project: BEM Assignment
+Created by: Alexi Canales
+Version: 1.0.3
+Assignment: BEM09
+Date: 2/21/2019
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Numans');
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+
+body {
+    font-family: 'Numans', 'Arial', 'Verdana', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #222222;
+    line-height: 1.25rem;
+}
+
+main {
+    padding-top: 3rem;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    margin-top: 5rem;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+    font-family: 'Roboto', 'Numans', 'Arial', 'Verdana', sans-serif;
+    color: #0f0f0f;
+    font-weight: 400;
+}
+
+h1, .h1 {
+    font-size: 1.5rem;
+    margin: 2rem 0rem 1rem;
+    padding: 0;
+    font-weight: 900;
+    color: #696868;
+}
+
+h2, .h2 {
+    font-size: 2.25rem;
+    margin: 5rem 0rem 1rem;
+    padding: 0;
+}
+
+h3, .h3 {
+    font-size: 1.5rem;
+    margin: 2rem 0rem 1rem;
+    padding: 0;
+}
+
+h4, .h4 {
+    font-size: 1rem;
+    margin: 2rem 0rem 1rem;
+    padding: 0;
+}
+
+b, strong {
+    font-weight: 600;
+    color: #000000;
+}
+
+blockquote {
+    margin: 2rem 1rem;
+    padding: 1rem;
+    border-left: 0.5rem solid #dadada;
+}
+
+blockquote footer, blockquote.blockquote-footer {
+    color: #777777;
+    margin-top: 0;
+    text-align: inherit;
+}
+
+blockquote.text-center {
+    border: 0 none;
+}
+
+blockquote.text-right {
+    border: 0 none;
+    border-right-color: currentcolor;
+    border-right-style: none;
+    border-right-width: 0px;
+    border-right: 0.5rem solid #dadada;
+}
+
+blockquote footer::before, blockquote.blockquote-footer::before {
+    content: "\2014 \00A0";
+}
+
+fieldset {
+    border: 1px solid #dedede;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/*End Main Website Styles*/
+
+/*Grid System*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-fluid {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    align-content: flex-start;
+    -webkit-align-content: flex-start;
+}
+
+/*Property for content alignment*/
+.flex-end {
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    display: table;
+
+}
+
+.col-1 {
+    flex: 1 0 8.333333%;
+    -webkit-flex: 1 0 8.333333%;
+}
+
+.col-2 {
+    flex: 1 0 16.666667%;
+    -webkit-flex: 1 0 16.666667%;
+}
+
+.col-3 {
+    flex: 1 0 25%;
+    -webkit-flex: 1 0 25%;
+}
+
+.col-4 {
+    flex: 1 0 33.333333%;
+    -webkit-flex: 1 0 33.333333%;
+}
+
+.col-5 {
+    flex: 1 0 41.666667%;
+    -webkit-flex: 1 0 41.666667%;
+}
+
+.col-6 {
+    flex: 1 0 50%;
+    -webkit-flex: 1 0 50%;
+}
+
+.col-7 {
+    flex: 1 0 58.333333%;
+    -webkit-flex: 1 0 58.333333%;
+}
+
+.col-8 {
+    flex: 1 0 66.666667%;
+    -webkit-flex: 1 0 66.666667%;
+}
+
+.col-9 {
+    flex: 1 0 75%;
+    -webkit-flex: 1 0 75%;
+}
+
+.col-10 {
+    flex: 1 0 83.333333%;
+    -webkit-flex: 1 0 83.333333%;
+}
+
+.col-11 {
+    flex: 1 0 91.666667%;
+    -webkit-flex: 1 0 91.666667%;
+}
+
+.col-12 {
+    flex: 1 0 100%;
+    -webkit-flex: 1 0 100%;
+}
+
+/*End Grid System*/
+
+/*Begin Header Code*/
+header {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: stretch;
+    -webkit-align-items: stretch;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+header .brand {
+    background: url("../images/logo.jpg") no-repeat 0 0/contain transparent;
+    display: block;
+    overflow: hidden;
+    width: 200px;
+    height: 100px;
+    text-indent: 99999rem;
+}
+
+header #globalSearch input[type='text'] {
+    font-family: inherit;
+    font-size: inherit;
+    border: 0 none;
+    border-bottom: 1px solid #acacac;
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+}
+
+header #globalSearch button {
+    border: 0;
+    background-color: transparent;
+
+}
+
+/*End Header Code*/
+
+/*Begin Navigation*/
+nav {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    align-items: stretch;
+    -webkit-align-items: stretch;
+    padding: 1rem;
+    box-sizing: border-box;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+nav #globalSearch {
+
+}
+
+nav .navbar-nav {
+    list-style-type: none;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    width: 100%;
+    border: 1px solid #acacac;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+nav .navbar-nav .dropdown-menu:hover > ul {
+    display: block;
+    background-color: white;
+}
+
+nav .navbar-nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+
+nav .navbar-nav > li > a {
+    text-decoration: none;
+    color: #000;
+    padding: 1rem 1.25rem;
+    box-sizing: border-box;
+}
+
+nav .navbar-nav > li:hover {
+    color: blueviolet;
+    border-top: 4px solid darkred;
+}
+
+nav .navbar-nav .dropdown-menu > a:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0d7";
+    padding-left: 1rem;
+}
+
+
+nav .navbar-nav .dropdown-menu > ul {
+    border: 1px solid #acacac;
+    position: absolute;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+nav ul.navbar-nav > li {
+    margin-top: -16px;
+    padding-top: 1rem;
+}
+
+ul.navbar-nav > li.active > a {
+    color: darkred;
+}
+
+nav .navbar-nav .dropdown-menu > ul > li > a {
+    color: #222222;
+    text-decoration: none;
+    box-sizing: border-box;
+    line-height: 2rem;
+    display: block;
+    padding: .5rem;
+    border-bottom: 1px solid #acacac;
+}
+
+#navigation-mobile {
+    display: none;
+}
+
+nav .navbar-nav .dropdown-menu > ul > li > a:hover {
+    background-color: whitesmoke;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+ul.dropdown-list > li:last-of-type > a:last-of-type {
+    border: 0;
+}
+
+
+/* End Navigation*/
+
+/*Start Footer*/
+footer {
+    justify-content: center;
+    -webkit-justify-content: center;
+    display: flex;
+    display: -webkit-flex;
+    margin-top: 20rem; /*Style is here to provide visual separation*/
+}
+
+.footerContainer {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    align-items: stretch;
+    -webkit-align-items: stretch;
+    padding: 1rem;
+    box-sizing: border-box;
+    justify-content: center;
+    -webkit-justify-content: center;
+    border: 1px solid #acacac;
+}
+
+ul.footer {
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    padding: 0;
+}
+
+ul.footer > li {
+    list-style: none;
+}
+
+li.active > a {
+    color: red;
+}
+
+ul.footer > li > a {
+    text-decoration: none;
+    color: #000;
+    padding: 1rem 1.25rem;
+    box-sizing: border-box;
+}
+
+ul.footer > li > a:hover {
+    color: darkred;
+}
+
+ul.footer > li.active > a {
+    color: darkred;
+}
+
+
+/*Footer Footer*/
+
+
+/*Start breadcrumbs*/
+ul.breadcrumb {
+    list-style: none;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    width: 27%;
+    padding: 0;
+}
+
+ul.breadcrumb li + li:before {
+    padding: 8px;
+    color: black;
+    content: "\2758";
+}
+
+ul.breadcrumb > li > a {
+    color: #000;
+    text-decoration: none;
+}
+
+/*End breadcrumbs*/
+
+/*start social icons*/
+ul.social-icons {
+    padding: 0;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+ul.social-icons > li {
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    display: inline-flex;
+    display: -webkit-inline-flex;
+}
+
+ul.social-icons > li {
+    border-left: 1px solid black;
+    padding: .5rem;
+}
+
+ul.social-icons > li:first-of-type {
+    border-left: 0;
+}
+
+ul.social-icons > li > a {
+    color: #000;
+    text-decoration: none;
+}
+
+/*end social icons*/
+
+
+/*Component Classes Start*/
+
+/*Contact Form*/
+.contact-form-container {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: wrap;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    width: 50%;
+}
+
+.contact-form-title {
+    font-size: 1rem;
+    color: #000;
+    margin: 10px 0;
+    display: flex;
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+    display: -webkit-flex;
+}
+
+.contact-form-input {
+    padding: .5rem;
+    font-size: 1rem;
+    color: #acacac;
+    margin-bottom: 1rem;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 1px solid #dedede;
+}
+
+.contact-form-submit {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 1rem;
+    padding: .5rem;
+    background-color: white;
+    border: 1px solid #e9e9e9;
+}
+
+
+.contact-form-title-bold {
+
+}
+
+.contact-form-input-edge {
+
+}
+
+.contact-form-container-border {
+
+}
+
+/*Contact End Form*/
+
+/*Content Div*/
+.content-container {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: wrap;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    width: 50%;
+}
+
+.content-section {
+}
+
+.content-image {
+}
+
+.content-title {
+    font-size: 1rem;
+    color: #000;
+    margin: 10px 0;
+    display: flex;
+    flex-basis: 100%;
+    -webkit-flex-basis: 100%;
+    display: -webkit-flex;
+}
+
+/*Content End Div*/
+
+
+/*Component Classes End*/
+
+
+/*Begin The Media Queries*/
+
+/*Tablet*/
+@media (max-width: 992px) {
+    .container-fluid {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        width: 90%;
+
+    }
+
+    .fa-bars {
+        font-size: 2rem;
+    }
+
+    nav {
+        display: none;
+    }
+
+    ul.breadcrumb {
+        width: 44%;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+
+    .navbar-toggler:hover + #navigation-mobile {
+        justify-content: flex-end;
+        -webkit-justify-content: flex-end;
+        display: flex;
+        display: -webkit-flex;
+        align-items: stretch;
+        -webkit-align-items: stretch;
+        width: 100%;
+    }
+
+    #navigation-mobile {
+        display: none;
+    }
+
+    #navigation-mobile > ul {
+        justify-content: flex-end;
+        -webkit-justify-content: flex-end;
+        align-items: stretch;
+        position: absolute;
+        background-color: white;
+        border: 1px solid #acacac;
+        padding: 1rem;
+        margin-top: -4.6rem;
+    }
+
+    ul.navbar-nav > li.active {
+        color: darkred;
+    }
+
+    #navigation-mobile > ul > li {
+        list-style: none;
+    }
+
+    #navigation-mobile > ul > li > a, #navigation-mobile > ul > li > ul > li > a {
+        text-decoration: none;
+        color: black;
+        line-height: 2rem;
+    }
+
+    #navigation-mobile > ul > li > ul > li {
+        list-style: none;
+    }
+}
+
+/*Phones*/
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+    }
+}
+
+/*Extremely Small Phones*/
+@media (max-width: 576px) {
+    header {
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+
+    .navbar-toggler {
+        display: block;
+        position: relative;
+        margin-top: -158px;
+        margin-left: 263px;
+    }
+
+    .footerContainer {
+        border: 0;
+    }
+
+    ul.footer {
+        flex-direction: row;
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        -webkit-justify-content: space-between;
+        align-items: center;
+        -webkit-align-items: center;
+        align-content: center;
+        -webkit-align-content: center;
+    }
+
+    ul.footer > li {
+        display: -webkit-flex;
+        display: flex;
+    }
+
+    ul.breadcrumb {
+        width: 100%;
+    }
+}
+
+/*End Media Queries */
