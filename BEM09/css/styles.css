@@ -619,13 +619,13 @@ ul.social-icons > li > a {
     justify-content: center;
 }
 
-input[type='text']{
+input[type='text'] {
     width: 100%;
     padding: .5rem;
     box-sizing: border-box;
 }
 
-button[type='submit']{
+button[type='submit'] {
     width: 100%;
     padding: .5rem;
     color: #acacac;
@@ -642,6 +642,44 @@ button[type='submit']{
 }
 
 /*End Subscription Component*/
+
+/*Media Component*/
+.media-container {
+    display: flex;
+    display: -webkit-flex;
+    border: 1px solid #e9e9e9;
+    box-sizing: border-box;
+    padding: 1rem;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.media-content{
+    flex: 0 0 100%
+}
+
+.media-title {
+    font-size: 1rem;
+    color: #000;
+    margin: 10px 0;
+    flex: 0 0 100%;
+}
+
+.media-content-image {
+    display: flex;
+    display: -webkit-flex;
+    flex: 2;
+}
+
+.media-content-video {
+
+}
+
+.media-title-bold {
+
+}
+
+/*End Media Component*/
 
 
 /*Component Classes End*/
