@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Assignment BEM09">
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+    <meta name="author" content="Alexi Canales">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dallas Fence Experts | BEM09</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+</head>
+<body>
+<main>
+    <header>
+        <div>
+            <a class="brand" href="#">Logo</a>
+        </div>
+        <div>
+            <p>Call Us: (972) 469-5969</p>
+            <form action="#" method="post" id="globalSearch">
+                <input type="text" placeholder="Search"/>
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+        </div>
+        <div class="navbar-toggler" data-target="#navigation"><i class="fas fa-bars"></i></div>
+    </header>
+    <nav id="navigation">
+        <ul class="navbar-nav">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="Creative-Brief.html">Creative Brief</a>
+            </li>
+            <li>
+                <a href="Typography.html">Typography</a>
+            </li>
+            <li>
+                <a href="BRANDING.html">Branding</a>
+            </li>
+            <li class="active">
+                <a href="BEM09.html">Components</a>
+            </li>
+            <li>
+                <a href="pagelayout.html">Layout</a>
+            </li>
+            <li class="dropdown-menu">
+                <a href="#">Documentation</a>
+                <ul class="dropdown-list">
+                    <li><a href="SWOT-Analysis.html">SWOT Analysis</a></li>
+                    <li class="dropdown-menu"><a href="#">Wire frames</a>
+                        <ul class="dropdown-list">
+                            <li><a href="attachments/dallas-fence-experts-sitemap.pdf">Sitemap</a></li>
+                            <li><a href="attachments/Wire%20Frame%20Desktop.pdf">Navigation & Breadcrumbs</a></li>
+                            <li><a href="attachments/Wire%20Frame%20Footer.pdf">Footer</a></li>
+                            <li><a href="attachments/BEM08.pdf">Components</a></li>
+                        </ul></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+    <section>
+        <div class="row">
+            <div class="col-12">
+                <h1>Components</h1>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="row">
+            <div class="col-12">
+                <h2>Developed Components</h2>
+                <p>Below I have included my components. All components are responsive.</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Contact Form Component</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="contact-form-container">
+                    <p class="contact-form-title">Contact Form</p>
+                    <form action="">
+                        <fieldset>
+                            <div class="form-group">
+                                <input type="text" class="contact-form-input" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="contact-form-input" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="contact-form-input" placeholder="Phone">
+                            </div>
+                            <button type="submit" class="contact-form-submit">Submit</button>
+                        </fieldset>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <table>
+            <tbody>
+            <tr>
+                <td>
+                    .contact-form-container { }<br>
+                    .contact-form-title<br>
+                    .contact-form-submit { }<br>
+                    .contact-form-input { }<br>
+                </td>
+                <td>
+                    .contact-form-title-bold { }<br/>
+                    .contact-form-input-edge { }<br/>
+                    .contact-form-container-border{ }<br/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <h3>Component Markup</h3>
+        <pre><code class="html">
+            &lt;div class="contact-form-container"&gt;
+            &lt;p class="contact-form-title"&gt;Contact Form Title&lt;/p&gt;
+                    &lt;form action=""&gt;
+                        &lt;fieldset&gt;
+                            &lt;div class="form-group"&gt;
+                                &lt;input type="text" class="contact-form-input" placeholder="Name"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="form-group"&gt;
+                                &lt;input type="text" class="contact-form-input" placeholder="Email"&gt;
+                            &lt;/div&gt;
+                            &lt;div class="form-group"&gt;
+                                &lt;input type="text" class="contact-form-input" placeholder="Phone"&gt;
+                            &lt;/div&gt;
+                            &lt;button type="submit" class="contact-form-submit"&gt;Submit&lt;/button&gt;
+                        &lt;/fieldset&gt;
+                    &lt;/form>
+            &lt;/div&gt;
+        </code></pre>
+        <h3>Component Modifiers</h3>
+        <pre><code class="html">
+            &lt;div class="content-title-emphasized"&gt;&lt;/div&gt;
+            &lt;div class="content-image-border"&gt;&lt;/div&gt;
+            &lt;div class="content-image-hidden"&gt;&lt;/div&gt;
+        </code></pre>
+    </section>
+    <section>
+        <h2>Content Component</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="content-container">
+                    <div class="content-section">
+                        <div class="content-title">
+                            <p>Post Title</p>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit mattis lacus,
+                            ut
+                            finibus nunc gravida ut. Donec scelerisque semper metus, in gravida nunc bibendum
+                            hendrerit.
+                            Maecenas luctus turpis at commodo consequat. Nam pharetra, leo non luctus semper, libero
+                            purus laoreet sem, vitae fermentum ex tortor vitae libero. Quisque non pharetra augue,
+                            quis
+                            porttitor mauris. Nunc pellentesque, mi eu luctus congue, dolor sapien sagittis risus,
+                            at
+                            semper neque tortor bibendum nunc. Suspendisse interdum leo id ex egestas dictum. Nulla
+                            imperdiet diam vitae leo vestibulum, eu tincidunt odio faucibus. </p>
+                    </div>
+                    <div class="content-image">
+                        <img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" class="responsive-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table>
+            <tbody>
+            <tr>
+                <td>
+                    .content-container { }<br>
+                    .content-section { }<br>
+                    .content-image { }<br>
+                    .content-title { }<br>
+                </td>
+                <td>
+                    .content-title-emphasized { }<br/>
+                    .content-image-border { }<br/>
+                    .content-image-hidden { }<br/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <h3>Component Markup</h3>
+        <pre><code class="html">
+             &lt;div class="content-container"&gt;
+                    &lt;div class="content-section"&gt;
+                        &lt;div class="content-title"&gt;
+                            &lt;p&gt;Post Title&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam suscipit mattis lacus,
+                            ut
+                            finibus nunc gravida ut. Donec scelerisque semper metus, in gravida nunc bibendum
+                            hendrerit.
+                        &lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="content-image"&gt;
+                        &lt;img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" class="responsive-img"&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+        </code></pre>
+        <h3>Component Modifiers</h3>
+        <pre><code class="html">
+            &lt;div class="content-title-emphasized"&gt;&lt;/div&gt;
+            &lt;div class="content-image-border"&gt;&lt;/div&gt;
+            &lt;div class="content-image-hidden"&gt;&lt;/div&gt;
+        </code></pre>
+    </section>
+    <section>
+        <h2>Subscription Component</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="subscription-container">
+                    <div class="subscription-title">
+                        <p>Subscribe to our mailing list</p>
+                    </div>
+                    <div class="subscription-input-field">
+                        <form action="">
+                            <input type="text">
+                        </form>
+                    </div>
+                    <div class="subscription-submit-button">
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table>
+            <tbody>
+            <tr>
+                <td>
+                    .subscription-container { }<br>
+                    .subscription-title { }<br>
+                    .subscription-submit-button { }<br>
+                    .subscription-input-field { }<br>
+                </td>
+                <td>
+                    .subscription-title-none { }<br/>
+                    .subscription-submit-button-green { }<br/>
+                    .subscription-input-field-disabled { }<br/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <h3>Component Markup</h3>
+        <pre><code class="html">
+           &lt;div class="subscription-container"&gt;
+                &lt;div class="subscription-title"&gt;
+                    &lt;p&gt;Subscribe to our mailing list&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="subscription-input-field"&gt;
+                    &lt;form action="#"&gt;
+                        &lt;input type="text"&gt;
+                    &lt;/form&gt;
+                &lt;/div&gt;
+                &lt;div class="subscription-submit-button"&gt;
+                    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        </code></pre>
+        <h3>Component Modifiers</h3>
+        <pre><code class="html">
+            &lt;div class="subscription-title-none"&gt;&lt;/div&gt;
+            &lt;div class="subscription-submit-button-green"&gt;&lt;/div&gt;
+            &lt;div class="subscription-input-field-disabled"&gt;&lt;/div&gt;
+        </code></pre>
+    </section>
+    <section>
+        <h2>Media Component</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="media-container">
+                    <div class="media-title">
+                        <p>Media</p>
+                    </div>
+                    <div class="media-content">
+                        <div class="media-content-image">
+                            <img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" class="responsive-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table>
+            <tbody>
+            <tr>
+                <td>
+                    .media-container { }<br>
+                    .media-content { }<br>
+                    .media-title { }<br>
+                    .media-content-image { }<br>
+                </td>
+                <td>
+                    .media-content-video { }<br/>
+                    .media-title-bold { }<br/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <h3>Component Markup</h3>
+        <pre><code class="html">
+             &lt;div class="media-container"&gt;
+                 &lt;div class="media-title"&gt;
+                     &lt;p&gt;Media&lt;/p&gt;
+                 &lt;/div&gt;
+                 &lt;div class="media-content"&gt;
+                     &lt;div class="media-content-image"&gt;
+                         &lt;img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" class="responsive-img"&gt;
+                     &lt;/div&gt;
+                 &lt;/div&gt;
+             &lt;/div&gt;
+        </code></pre>
+        <h3>Component Modifiers</h3>
+        <pre><code class="html">
+            &lt;div class="media-title-bold"&gt;&lt;/div&gt;
+            &lt;div class="media-content-video"&gt;&lt;/div&gt;
+        </code></pre>
+    </section>
+    <section>
+        <h2>Media Gallery Component</h2>
+        <div class="row">
+            <div class="col-12">
+                <div class="gallery-container">
+                    <div class="gallery-title">
+                        <p>Media Gallery Component</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" class="responsive-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" class="responsive-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" class="responsive-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" class="responsive-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" class="responsive-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" class="responsive-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table>
+            <tbody>
+            <tr>
+                <td>
+                    .gallery-container { }<br>
+                    .gallery-item { }<br>
+                    .gallery-title { }<br>
+                </td>
+                <td>
+                    .gallery-item-img { }<br/>
+                    .gallery-item-video { }<br/>
+                    .gallery-item-none { }<br/>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <h3>Component Markup</h3>
+        <pre><code class="html">
+            &lt;div class="gallery-container"&gt;
+                    &lt;div class="gallery-title"&gt;
+                        &lt;p&gt;Media Gallery Component&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;div class="gallery-item"&gt;
+                        &lt;img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" class="responsive-img"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="gallery-item"&gt;
+                        &lt;img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" class="responsive-img"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="gallery-item"&gt;
+                        &lt;img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" class="responsive-img"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="gallery-item"&gt;
+                        &lt;img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" class="responsive-img"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="gallery-item"&gt;
+                        &lt;img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" class="responsive-img"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="gallery-item"&gt;
+                        &lt;img src="https://dummyimage.com/600x400/000/fff" alt="dummy image" class="responsive-img"&gt;
+                    &lt;/div&gt;
+            &lt;/div&gt;
+        </code></pre>
+        <h3>Component Modifiers</h3>
+        <pre><code class="html">
+            &lt;div class="gallery-item-img"&gt;&lt;/div&gt;
+            &lt;div class="gallery-item-video"&gt;&lt;/div&gt;
+            &lt;div class="gallery-item-none"&gt;&lt;/div&gt;
+        </code></pre>
+    </section>
+    </div>
+    <footer>
+        <div class="footerContainer">
+            <div class="col-12">
+                <ul class="footer">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Creative Brief</a>
+                    </li>
+                    <li>
+                        <a href="#">Typography</a>
+                    </li>
+                    <li>
+                        <a href="#">Branding</a>
+                    </li>
+                    <li>
+                        <a href="#">Components</a>
+                    </li>
+                </ul>
+                <hr/>
+                <ul class="social-icons">
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+                <p class="text-center">Contact Information</p>
+            </div>
+        </div>
+    </footer>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="js/app.js"></script>
+</body>
+</html>
