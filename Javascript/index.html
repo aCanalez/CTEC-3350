@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+<body>
+<form id="multiplicationTable">
+    <fieldset>
+        <legend>Math problem</legend>
+        <div class="form-group">
+            <label for="starting">Starting</label>
+            <div class="form-control">
+                <input type="number" id="starting" name="starting" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="ending">Ending</label>
+            <div class="form-control">
+                <input type="number" id="ending" name="ending" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="startingFactor">Starting Factor</label>
+            <div class="form-control">
+                <input type="number" id="startingFactor" name="factor" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="endingFactor">Ending Factor</label>
+            <div class="form-control">
+                <input type="number" id="endingFactor" name="factor" required>
+            </div>
+        </div>
+        <button type="submit">Get Results</button>
+    </fieldset>
+</form>
+<div id="results"></div>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+<script src="scripts/app.js"></script>
+</body>
+</html>

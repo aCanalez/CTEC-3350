@@ -1,0 +1,480 @@
+/*
+  Project: BEM Assignment
+  Created by: Carlos Cucalon
+  Version: 1.0.1
+  Date: 01.24.2019
+*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300|Montserrat:300,300i,400,400i,700,700i');
+@import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
+@import url('code.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", "Arial", "Verdana", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.25em;
+    color: #666666;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4 {
+    font-family: "Lato", "Montserrat", "Verdana", sans-serif;
+    color: #222222;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+h1, .h1 {
+    font-size: 4.236em;
+    line-height: 4.25rem;
+    margin: 2rem 0 1rem; /* 32px 0 16px */
+}
+
+h2, .h2 {
+    font-size: 2.618em;
+    line-height: 3rem;
+    margin: 1rem 0;
+}
+
+h3, .h3 {
+    font-size: 1.618em;
+    line-height: 2rem;
+    margin: 1rem 0;
+}
+
+h4, .h4 {
+    font-size: 1em;
+    line-height: 1.25rem;
+    margin: 1rem 0;
+}
+
+
+/* Blockquote */
+blockquote.blockquote {
+    font-size: 1.25em;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-left: 0.5rem solid #dadada;
+    margin: 1rem auto;
+}
+
+blockquote.blockquote p {
+    padding: 0;
+    margin: 0 0 1em;
+}
+
+blockquote.blockquote p:before,
+blockquote.blockquote p:after {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+blockquote.blockquote p:before {
+    content: "\00AB";
+    padding-right: 1em;
+}
+
+blockquote.blockquote p:after {
+    content: "\00BB";
+    padding-left: 1em;
+}
+
+blockquote.blockquote footer.blockquote-footer {
+
+}
+
+blockquote.blockquote footer.blockquote-footer cite {
+
+}
+
+blockquote.blockquote.text-center {
+    text-align: center;
+    border-top: 0.5rem solid #dadada;
+    border-left: 0 none;
+}
+
+blockquote.blockquote.text-right {
+    text-align: right;
+    border-right: 0.5rem solid #dadada;
+    border-left: 0 none;
+}
+
+/* End of Blockquote */
+
+/* Unordered Lists */
+ul {
+    list-style-type: circle;
+}
+
+ul ul {
+    list-style-type: square;
+}
+
+ul ul ul {
+    list-style-type: disc;
+}
+
+ul.list-unstyled {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.list-inline {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+ul.list-inline li {
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+
+/* End of Unordered Lists */
+
+
+/* Table Styles */
+table {
+    border-collapse: collapse;
+}
+
+table tr {
+
+}
+
+table tr td,
+table tr th {
+    border: 1px solid #000000;
+    /*
+      border-width:
+      border-style:
+      border-color:
+    */
+    padding: 1rem;
+    vertical-align: top;
+}
+
+table tr th {
+    text-align: center;
+    font-weight: 600;
+    color: #000000;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* End of Table Styles */
+
+
+/* Grid System */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: pink;
+    padding: 0 15px;
+}
+
+.container-fluid {
+    max-width: 100%;
+    margin: 0 auto;
+    /*background-color: blue;*/
+    padding: 0 15px;
+}
+
+.row {
+    margin: 0 -15px 1rem;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+    align-content: flex-start;
+    -webkit-align-content: flex-start;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+.col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    padding: 0 15px;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.col-1 {
+    flex: 1 0 8.333333%;
+    -webkit-flex: 1 0 8.333333%;
+}
+
+.col-2 {
+    flex: 1 0 16.666667%;
+    -webkit-flex: 1 0 16.666667%;
+}
+
+.col-3 {
+    flex: 1 0 25%;
+    -webkit-flex: 1 0 25%;
+}
+
+.col-4 {
+    flex: 1 0 33.333333%;
+    -webkit-flex: 1 0 33.333333%;
+}
+
+.col-5 {
+    flex: 1 0 41.666667%;
+    -webkit-flex: 1 0 41.666667%;
+}
+
+.col-6 {
+    flex: 1 0 50%;
+    -webkit-flex: 1 0 50%;
+}
+
+.col-7 {
+    flex: 1 0 58.333333%;
+    -webkit-flex: 1 0 58.333333%;
+}
+
+.col-8 {
+    flex: 1 0 66.666667%;
+    -webkit-flex: 1 0 66.666667%;
+}
+
+.col-9 {
+    flex: 1 0 75%;
+    -webkit-flex: 1 0 75%;
+}
+
+.col-10 {
+    flex: 1 0 83.333333%;
+    -webkit-flex: 1 0 83.333333%;
+}
+
+.col-11 {
+    flex: 1 0 91.666667%;
+    -webkit-flex: 1 0 91.666667%;
+}
+
+.col-12 {
+    flex: 1 0 100%;
+    -webkit-flex: 1 0 100%;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media screen and (max-width: 992px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 576px) {
+    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6,
+    .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+        flex: 1 0 100%;
+        -webkit-flex: 1 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* End of Grid System */
+
+
+/* Navigation */
+.navbar-toggler {
+    display: none;
+}
+
+nav {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap; /* flex-direction flex wrap */
+    -webkit-flex-flow: row wrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: stretch;
+    -webkit-align-items: stretch;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+nav #globalSearch {
+
+}
+
+nav .navbar-brand {
+    background: url('http://ccucalon.uta.cloud/CTEC-3350/BEM/images/class-name.svg') no-repeat 0 0/contain transparent;
+    display: block;
+    overflow: hidden;
+    width: 300px;
+    height: 65px;
+    text-indent: -999999rem;
+}
+
+nav #globalSearch input[type='text'] {
+    font-family: inherit;
+    font-size: inherit;
+    border: 0 none;
+    border-bottom: 1px solid #dadada;
+    padding: 0.5rem 0;
+    box-sizing: border-box;
+}
+
+nav #globalSearch button {
+    background-color: transparent;
+    border: 0 none;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+}
+
+nav .navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    width: 100%;
+}
+
+nav .navbar-nav .dropdown-menu:hover > ul {
+    display: block;
+}
+
+nav .navbar-nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+}
+
+nav .navbar-nav > li > a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1.25rem;
+    box-sizing: border-box;
+    border-right: 1px solid #dadada;
+}
+
+nav .navbar-nav > li:hover > a {
+    color: blue;
+}
+
+nav .navbar-nav .dropdown-menu > a:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f078";
+    padding-left: 1rem;
+    font-weight: 900;
+}
+
+nav .navbar-nav .dropdown-menu:hover > a:after {
+    content: "\f077";
+}
+
+nav .navbar-nav .dropdown-menu > ul {
+    background-color: black;
+}
+
+nav .navbar-nav .dropdown-menu > ul > li {
+
+}
+
+nav .navbar-nav .dropdown-menu > ul > li > a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1.25rem;
+    box-sizing: border-box;
+}
+
+nav .navbar-nav .dropdown-menu > ul > li > a:hover {
+    background-color: #dadada;
+    color: black;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    #navigation {
+        display: none;
+    }
+}
+
+#navigation.open {
+    display: block;
+}
+
+/* End of Navigation */
+
+/* FAQ Styles*/
+.faq-description {
+    display: none;
+}
+
+/* End FAQ Styles*/
+
+/* Form Styles */
+input, textarea, select, option {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input[type='text'], input[type='email'],
+input[type='password'], input[type='number'] {
+    padding: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+form .form-group:last-of-type {
+    padding-bottom: 0;
+}
+
+.form-group label {
+    flex: 1 0 30%;
+    -webkit-flex: 1 0 30%;
+}
+
+.form-group .form-control {
+    flex: 1 0 65%;
+    -webkit-flex: 1 0 65%;
+}
+
+form.vertical-form .form-group {
+    flex-flow: column wrap;
+    -webkit-flex-flow: column wrap;
+}
+
+form.vertical-form .form-group label,
+form.vertical-form .form-group .form-control {
+    flex: 1 0 100%;
+    -webkit-flex: 1 0 100%;
+}
+
+/* End of Form Styles */
+
+
+/* End */

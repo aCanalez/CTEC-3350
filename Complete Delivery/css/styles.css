@@ -316,8 +316,12 @@ nav .navbar-nav > li > a {
     box-sizing: border-box;
 }
 
-nav .navbar-nav > li:hover {
+nav .navbar-nav > li {
     color: blueviolet;
+    border-top: 4px solid transparent;
+}
+
+nav .navbar-nav > li:hover {
     border-top: 4px solid darkred;
 }
 
@@ -559,7 +563,7 @@ textarea, select {
 .contact-form-container-border {
 }
 
-.fail-input{
+.fail-input {
     padding: .5rem;
     font-size: 1rem;
     color: #acacac;
@@ -567,8 +571,9 @@ textarea, select {
     border-radius: 8px;
     border: 1px solid red;
 }
-input.fail-input:before{
-    content : "Failed";
+
+input.fail-input:before {
+    content: "Failed";
     display: block;
     height: 10px;
 }
@@ -656,13 +661,13 @@ input.fail-input:before{
 }
 
 input[type='text'], input[type='password'], input[type='email'], textarea {
-    width: 100%;
+    width: 85%;
     padding: .5rem;
     box-sizing: border-box;
 }
 
 button[type='submit'] {
-    width: 100%;
+    width: 30px;
     padding: .5rem;
     color: #acacac;
 }
@@ -871,6 +876,10 @@ span.color-definition {
         display: none;
     }
 
+    nav.open {
+        display: block;
+    }
+
     ul.breadcrumb {
         width: 44%;
     }
@@ -880,47 +889,36 @@ span.color-definition {
     }
 
 
-    .navbar-toggler:hover + #navigation-mobile {
-        justify-content: flex-end;
-        -webkit-justify-content: flex-end;
-        display: flex;
-        display: -webkit-flex;
-        align-items: stretch;
-        -webkit-align-items: stretch;
-        width: 100%;
-    }
-
-    #navigation-mobile {
-        display: none;
-    }
-
-    #navigation-mobile > ul {
-        justify-content: flex-end;
-        -webkit-justify-content: flex-end;
-        -webkit-align-items: stretch;
-        align-items: stretch;
-        position: absolute;
-        background-color: white;
-        border: 1px solid #acacac;
-        padding: 1rem;
-        margin-top: -4.6rem;
-    }
-
     ul.navbar-nav > li.active {
         color: darkred;
     }
 
-    #navigation-mobile > ul > li {
+    nav .navbar-nav > li:hover {
+        border-top: 4px solid transparent;
+    }
+
+    nav.open > .navbar-nav {
+        list-style-type: none;
+        display: flex;
+        display: -webkit-flex;
+        flex-flow: row wrap;
+        -webkit-flex-flow: column;
+        border: 1px solid #acacac;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    #navigation.open > ul > li {
         list-style: none;
     }
 
-    #navigation-mobile > ul > li > a, #navigation-mobile > ul > li > ul > li > a {
+    #navigation.open > ul > li > a, #navigation.open > ul > li > ul > li > a {
         text-decoration: none;
         color: black;
         line-height: 2rem;
     }
 
-    #navigation-mobile > ul > li > ul > li {
+    #navigation.open > ul > li > ul > li {
         list-style: none;
     }
 }
