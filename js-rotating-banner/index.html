@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Description goes here">
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+    <meta name="author" content="CodeTechTalk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CodeTechTalk Basic Structure</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  </head>
+  <body>
+
+    <main>
+      <div id="herosample" class="hero-container">
+        <ol class="hero-indicators">
+          <li data-target="#herosample" data-slide-to="0" class="active"></li>
+          <li data-target="#herosample" data-slide-to="1"></li>
+          <li data-target="#herosample" data-slide-to="2"></li>
+        </ol>
+        <div class="hero-slides">
+          <div class="hero-slide active">
+            <div class="hero-description">
+              <h2>Slide 1</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet quam quis sem feugiat lacinia quis id mi. Quisque posuere, velit in ultrices mattis, ligula lacus accumsan massa, posuere imperdiet sapien lectus dignissim felis.</p>
+              <p><a href="#" class="btn primary-btn">CTA Link</a></p>
+            </div>
+            <img src="https://images.pexels.com/photos/732548/pexels-photo-732548.jpeg" />
+          </div>
+          <div class="hero-slide">
+            <div class="hero-description">
+              <h2>Slide 2</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet quam quis sem feugiat lacinia quis id mi. Quisque posuere, velit in ultrices mattis, ligula lacus accumsan massa, posuere imperdiet sapien lectus dignissim felis.</p>
+              <p><a href="#" class="btn primary-btn">CTA Link</a></p>
+            </div>
+            <img src="https://images.pexels.com/photos/416053/pexels-photo-416053.jpeg" />
+          </div>
+          <div class="hero-slide">
+            <div class="hero-description">
+              <h2>Slide 3</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet quam quis sem feugiat lacinia quis id mi. Quisque posuere, velit in ultrices mattis, ligula lacus accumsan massa, posuere imperdiet sapien lectus dignissim felis.</p>
+              <p><a href="#" class="btn primary-btn">CTA Link</a></p>
+            </div>
+            <img src="https://images.pexels.com/photos/374006/pexels-photo-374006.jpeg" />
+          </div>
+        </div>
+        <a href="#" class="hero-control hero-control-prev" data-slide="prev">Previous</a>
+        <a href="#" class="hero-control hero-control-next" data-slide="next">Next</a>
+      </div>
+      <button class="start">Start</button>
+      <button class="stop">Stop</button>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
