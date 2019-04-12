@@ -5,12 +5,12 @@ Version: 1.0.3
 Assignment: BEM09
 Date: 2/21/2019
 */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Numans');
 @import url('https://use.fontawesome.com/releases/v5.7.2/css/all.css');
 
 body {
-    font-family: 'Numans', 'Arial', 'Verdana', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 16px;
     color: #222222;
@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
 }
 
 h1, .h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 0rem 0rem 1rem;
     padding: 0;
     font-weight: 900;
@@ -79,9 +79,19 @@ h4, .h4 {
     padding: 0;
 }
 
+p{
+    font-size: 1.5em;
+    font-weight: inherit;
+    line-height: 1.3em;
+}
+
 b, strong {
     font-weight: 600;
     color: #000000;
+}
+
+article{
+    width: 53em;
 }
 
 blockquote {
@@ -509,6 +519,7 @@ ul.breadcrumb > li > a {
     top: 0;
     left: 0;
     z-index: -1;
+    width: 100%;
 }
 
 .hero-container .hero-slide .hero-description {
