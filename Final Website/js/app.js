@@ -1,5 +1,11 @@
 //Date 03.26.2019
 
+//Go back function
+function goBack(){
+    window.history.back();
+}
+
+//Navigation Toggle Script
 $(function () {
     const navigationToggler = $(".navbar-toggler");
     const mainNavigation = $("#navigation");
@@ -8,6 +14,24 @@ $(function () {
         mainNavigation.toggleClass("open");
     });
 
+});
+
+//Form Submission Scripts
+$(function (){
+
+
+    $(".contact-form-submit").on("click", function(){
+        const input = $(".contact-form-input").val();
+
+        if(input === ""){
+            window.location.href = 'error.html';
+            return false;
+        } else {
+            window.location.href = 'success.html';
+            return false;
+        }
+
+    });
 });
 
 
